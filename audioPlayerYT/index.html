@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Audio Player YT</title>
+
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="audioPlayer">
+                <audio class="audiocls"></audio>
+                <div class="volContainer">
+                    <p class="titlevol volcls">Vol</p>
+                    <input type="range" name="vol" id="volid" min="0" max="5" value="5">
+                    <p class="volNum volcls">5</p>
+                </div>
+                <div class="thumbnails">
+                    <img alt="" class="tumbnailsimg">
+                    <div class="textContainer">
+                        <p class="title"></p>
+                        <p class="artist"></p>
+                    </div>
+                </div>
+                <div class="audioPlayer__control">
+                    <div class="progressArea">
+
+                        <input class="progressBar" type="range" name="input" id="inputId" min="0" value="0">
+
+                        <div class="timeContainer">
+                            <p class="startTime">0.00</p>
+                            <p class="endTime">2.00</p>
+                        </div>
+                    </div>
+                    <div class="mainControl">
+                        <img src="./src/icon/pre.png" alt="" class="audio__pre audioCommon">
+                        <img src="./src/icon/pre10.png" alt="" class="audio__pre10 audioCommon">
+                        <img src="./src/icon/pause.png" alt="" class="audio__playpause audioCommon">
+                        <img src="./src/icon/nxt10.png" alt="" class="audio__nxt10 audioCommon">
+                        <img src="./src/icon/nxt.png" alt="" class="audio__nxt audioCommon">
+                    </div>
+                </div>
+            </div>
+            <div class="songList">
+            </div>
+        </div>
+    </body>
+    <script src="./songList.js"></script>
+    <script src="./index.js"></script>
+
+</html>
